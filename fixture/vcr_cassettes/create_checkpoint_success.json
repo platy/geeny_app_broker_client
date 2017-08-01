@@ -1,0 +1,26 @@
+[
+  {
+    "request": {
+      "body": "{\"checkpoints\":[{\"shardId\":\"garmin/dailies.json\",\"sequenceNumber\":\"0\"}]}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 2000
+      },
+      "request_body": "",
+      "url": "http://localhost:1319/app/garmin/messageType/dailies/checkpoint"
+    },
+    "response": {
+      "body": "",
+      "headers": {
+        "Date": "Tue, 25 Jul 2017 14:23:52 GMT",
+        "Content-Length": "0",
+        "Content-Type": "text/plain; charset=utf-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

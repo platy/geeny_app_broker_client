@@ -1,0 +1,26 @@
+[
+  {
+    "request": {
+      "body": "{\"shardId\":\"garmin/dailies.json\",\"maxBatchSize\":100,\"iteratorType\":\"LAST_CHECKPOINT\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 500
+      },
+      "request_body": "",
+      "url": "http://localhost:1319/app/garmin/messageType/dailies/iterator"
+    },
+    "response": {
+      "body": "{\"shardIterator\":\"aab5258c-96c6-416b-8757-a6dacf5281b1\"}",
+      "headers": {
+        "Content-Length": "56",
+        "Content-Type": "application/json",
+        "Date": "Thu, 13 Jul 2017 12:49:08 GMT"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

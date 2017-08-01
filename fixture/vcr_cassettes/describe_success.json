@@ -1,0 +1,26 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 500
+      },
+      "request_body": "",
+      "url": "http://localhost:1319/app/garmin/messageType/dailies"
+    },
+    "response": {
+      "body": "{\"shards\":[{\"shardId\":\"garmin/dailies.json\"}]}",
+      "headers": {
+        "Content-Length": "46",
+        "Content-Type": "application/json",
+        "Date": "Thu, 13 Jul 2017 12:49:08 GMT"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

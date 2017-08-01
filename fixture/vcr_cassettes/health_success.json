@@ -1,0 +1,26 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 500
+      },
+      "request_body": "",
+      "url": "http://localhost:1319/health"
+    },
+    "response": {
+      "body": "",
+      "headers": {
+        "Date": "Thu, 13 Jul 2017 12:49:08 GMT",
+        "Content-Length": "0",
+        "Content-Type": "text/plain; charset=utf-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

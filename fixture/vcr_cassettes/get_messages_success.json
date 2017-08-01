@@ -1,0 +1,50 @@
+[
+  {
+    "request": {
+      "body": "{\"shardId\":\"garmin/dailies.json\",\"maxBatchSize\":1,\"iteratorType\":\"LATEST\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "options": {
+        "recv_timeout": 2000
+      },
+      "request_body": "",
+      "url": "http://localhost:1319/app/garmin/messageType/dailies/iterator"
+    },
+    "response": {
+      "body": "{\"shardIterator\":\"60e0f94e-cdd0-46ba-9ec5-93979c2ce47c\"}",
+      "headers": {
+        "Content-Length": "56",
+        "Content-Type": "application/json",
+        "Date": "Tue, 25 Jul 2017 14:23:06 GMT"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 2000
+      },
+      "request_body": "",
+      "url": "http://localhost:1319/app/garmin/messageType/dailies/iterator/60e0f94e-cdd0-46ba-9ec5-93979c2ce47c"
+    },
+    "response": {
+      "body": "{\"messages\":[{\"sequenceNumber\":\"0\",\"payload\":\"W3siYWN0aXZlS2lsb2NhbG9yaWVzIjowLCJhY3RpdmVUaW1lSW5TZWNvbmRzIjowLCJhY3Rpdml0eVR5cGUiOiJXQUxLSU5HIiwiZGlzdGFuY2VJbk1ldGVycyI6MCwiZHVyYXRpb25JblNlY29uZHMiOjMxODAsImZsb29yc0NsaW1iZWRHb2FsIjoxMCwiaW50ZW5zaXR5RHVyYXRpb25Hb2FsSW5TZWNvbmRzIjo5MDAwLCJzdGFydFRpbWVJblNlY29uZHMiOjE0OTk3MjQwMDAsInN0YXJ0VGltZU9mZnNldEluU2Vjb25kcyI6NzIwMCwic3RlcHMiOjAsInN0ZXBzR29hbCI6Njg5Mywic3VtbWFyeUlkIjoieDFmMjAyMWYtNTk2M2Y4ZTAtYzZjLTYiLCJ0aW1lT2Zmc2V0SGVhcnRSYXRlU2FtcGxlcyI6bnVsbH0seyJhY3RpdmVLaWxvY2Fsb3JpZXMiOjIyNywiYWN0aXZlVGltZUluU2Vjb25kcyI6MTYzNSwiYWN0aXZpdHlUeXBlIjoiV0FMS0lORyIsImF2ZXJhZ2VIZWFydFJhdGVJbkJlYXRzUGVyTWludXRlIjo3NiwiZGlzdGFuY2VJbk1ldGVycyI6NjMyMiwiZHVyYXRpb25JblNlY29uZHMiOjg2NDAwLCJmbG9vcnNDbGltYmVkIjo0LCJmbG9vcnNDbGltYmVkR29hbCI6MTAsImludGVuc2l0eUR1cmF0aW9uR29hbEluU2Vjb25kcyI6OTAwMCwibWF4SGVhcnRSYXRlSW5CZWF0c1Blck1pbnV0ZSI6MTM2LCJtaW5IZWFydFJhdGVJbkJlYXRzUGVyTWludXRlIjo1NywibW9kZXJhdGVJbnRlbnNpdHlEdXJhdGlvbkluU2Vjb25kcyI6NzIwLCJyZXN0aW5nSGVhcnRSYXRlSW5CZWF0c1Blck1pbnV0ZSI6NTcsInN0YXJ0VGltZUluU2Vjb25kcyI6MTQ5OTYzNzYwMCwic3RhcnRUaW1lT2Zmc2V0SW5TZWNvbmRzIjo3MjAwLCJzdGVwcyI6MjQyMiwic3RlcHNHb2FsIjo3MTI5LCJzdW1tYXJ5SWQiOiJ4MWYyMDIxZi01OTYyYTc2MC0xNTE4MC02IiwidGltZU9mZnNldEhlYXJ0UmF0ZVNhbXBsZXMiOnsiMzQ2OTUiOjExMSwiMzQ3MTAiOjExMSwiMzQ3MjUiOjExMSwiMzQ3NDAiOjExMSwiMzQ3NTUiOjEwOCwiMzQ3NzAiOjEwOCwiMzQ3ODUiOjEwOCwiMzQ4MDAiOjEwOCwiMzQ4MTUiOjEwMiwiMzQ4MzAiOjEwMiwiMzQ4NDUiOjEwMn19XQ==\",\"thingId\":\"1\",\"messageId\":\"1\",\"userId\":\"user\"}],\"nextIterator\":\"a1584acc-ff61-42d6-aa40-79a28abb6239\"}",
+      "headers": {
+        "Content-Length": "1534",
+        "Content-Type": "application/json",
+        "Date": "Tue, 25 Jul 2017 14:23:06 GMT"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
