@@ -12,4 +12,11 @@ end
 
 ## Usage
 
-TODO
+```
+    app = "Your App UUID"
+    message = "Your message Id"
+    Geeny.AppBrokerClient.describe(app, message)
+    |> Enum.map(fn(shard_id) ->
+      Geeny.AppBrokerClient.get_iterator(app, message, shard_id)
+    end)
+```

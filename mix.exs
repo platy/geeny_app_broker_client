@@ -35,7 +35,7 @@ defmodule AppBrokerClientEx.Mixfile do
     [
       {:httpoison, "~> 0.11.1"},
       {:poison, "~> 2.0"},
-      {:exvcr, "~> 0.8", only: :test}\
+      {:exvcr, "~> 0.8", only: :test}
     ]
   end
 end
