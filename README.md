@@ -10,12 +10,12 @@ Just include the dependency in your `mix.exs` file.
 
 ```elixir
 def deps do
-	[
-     {:app_broker_client_ex,
+  [
+    {:app_broker_client_ex,
        git: "https://github.com/diegoeche/geeny_app_broker_client",
        branch: "master"
-     }
-	]
+    }
+  ]
 end
 ```
 
