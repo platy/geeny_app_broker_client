@@ -26,9 +26,7 @@ The library uses environment variable to configure the endpoints.
 Environment Variables:
 ```
      # App Broker
-     APP_BROKER_GEENY_APP_ID = <your-app-id>
      APP_BROKER_URL = <your app broker instance>
-     APP_BROKER_GEENY_MESSAGE_TYPE = <the message type ID to consume>
 ```
 
 

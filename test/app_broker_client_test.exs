@@ -4,12 +4,8 @@ defmodule Dokidoki.AppBrokerClientTest do
 
   setup do
     System.delete_env("APP_BROKER_URL")
-    System.delete_env("APP_BROKER_GEENY_APP_ID")
-    System.delete_env("APP_BROKER_GEENY_MESSAGE_TYPE")
 
     System.put_env("APP_BROKER_URL", "localhost:1319")
-    System.put_env("APP_BROKER_GEENY_APP_ID", "garmin")
-    System.put_env("APP_BROKER_GEENY_MESSAGE_TYPE", "dailies")
 
     on_exit fn ->
       System.delete_env("APP_BROKER_URL")
