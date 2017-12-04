@@ -5,7 +5,7 @@ defmodule Dokidoki.AppBrokerClientTest do
   setup do
     System.delete_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL")
 
-    System.put_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL", "localhost:1319")
+    System.put_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL", "localhost:1319/app")
 
     on_exit fn ->
       System.delete_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL")
@@ -21,13 +21,6 @@ defmodule Dokidoki.AppBrokerClientTest do
     expected_value = "http://example.com"
     System.put_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL", expected_value)
     assert expected_value == Geeny.AppBrokerClient.host
-  end
-
-  test "Health success" do
-    use_cassette "health_success" do
-      result = Geeny.AppBrokerClient.health()
-      assert result == :ok
-    end
   end
 
   test "describe success" do

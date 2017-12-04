@@ -15,12 +15,8 @@ defmodule Geeny.AppBrokerClient do
     System.get_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL")
   end
 
-  def health_url do
-    Geeny.AppBrokerClient.host <> "/health"
-  end
-
   def describe_url(app_id, message_type) do
-    "#{Geeny.AppBrokerClient.host}/app/#{app_id}/messageType/#{message_type}"
+    "#{Geeny.AppBrokerClient.host}/#{app_id}/messageType/#{message_type}"
   end
 
   def iterator_url(app_id, message_type) do
@@ -42,13 +38,6 @@ defmodule Geeny.AppBrokerClient do
       {_, response} ->
         Logger.error("Error calling #{url}:" <> inspect(response))
         {:error, response}
-    end
-  end
-
-  # Returns (:ok or Error)
-  def health do
-    get(health_url()) do
-      fn(_) -> :ok end
     end
   end
 
