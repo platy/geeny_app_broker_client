@@ -26,7 +26,7 @@ The library uses environment variable to configure the endpoints.
 Environment Variables:
 ```
      # App Broker
-     APP_BROKER_URL = <your app broker instance>
+     GEENY_APPLICATION_BROKER_SUBSCRIBER_URL = <your app broker instance>
 ```
 
 

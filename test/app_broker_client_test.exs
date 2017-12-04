@@ -3,12 +3,12 @@ defmodule Dokidoki.AppBrokerClientTest do
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 
   setup do
-    System.delete_env("APP_BROKER_URL")
+    System.delete_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL")
 
-    System.put_env("APP_BROKER_URL", "localhost:1319")
+    System.put_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL", "localhost:1319")
 
     on_exit fn ->
-      System.delete_env("APP_BROKER_URL")
+      System.delete_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL")
     end
   end
 
@@ -19,7 +19,7 @@ defmodule Dokidoki.AppBrokerClientTest do
 
   test "Can be configured using env variables" do
     expected_value = "http://example.com"
-    System.put_env("APP_BROKER_URL", expected_value)
+    System.put_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL", expected_value)
     assert expected_value == Geeny.AppBrokerClient.host
   end
 

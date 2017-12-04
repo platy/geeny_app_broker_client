@@ -12,7 +12,7 @@ defmodule Geeny.AppBrokerClient do
   }
 
   def host do
-    System.get_env("APP_BROKER_URL")
+    System.get_env("GEENY_APPLICATION_BROKER_SUBSCRIBER_URL")
   end
 
   def health_url do
